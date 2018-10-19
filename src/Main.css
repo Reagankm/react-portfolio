@@ -1,0 +1,26 @@
+.mainHeadings {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.mainName {
+  font-size: 64px;
+  margin-top: 275px;
+}
+
+.mainTitle {
+  font-size: 50px;
+  margin-top: -10px;
+}
+
+/****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .mainName {
+    font-size: 42px;
+  }
+  .mainTitle {
+    font-size: 35px;
+  }
+}

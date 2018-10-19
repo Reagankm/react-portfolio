@@ -1,0 +1,62 @@
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.proj-row:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin: 0 0 10px;
+}
+
+.section.project-heading {
+  flex-grow: 1;
+}
+
+.project-description {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-right: 60px;
+  margin-left: 60px;
+  flex-grow: 1;
+}
+
+.project-tech .label:not(:last-child) {
+  margin-right: 10px;
+}
+
+.project-tech .label {
+  display: inline-block;
+}
+
+.hide-on-lg {
+  display: none;
+}
+
+/****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
+
+@media (max-width: 767px) {
+  .project-description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .hide-on-lg {
+    display: inherit;
+  }
+
+  .hide-on-sm {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+[
+
+  {
+    "name": "Professional Portfolio Website",
+    "technology": ["React.js", "VPS", "nginx", "Ubuntu", "Linode", "HTML", "CSS"],
+    "oneLiner": "A responsive website to display my portfolio and provide contact information.",
+    "description": "I wrote this website from scratch to display my professional portfolio.  I used React.js and served the site from an nginx server hosted on Linode. I also wrote custom DNS entries to point it at my domain.",
+    "company": "Personal Project"
+  },
+
+  {
+    "name": "Context Cards",
+    "technology": ["Java", "Android", "Appengine", "iOS", "Objective C"],
+    "oneLiner": "Feature that lets users swipe up to view additional information about a location or product.",
+    "description": "I localized this feature in codebases across Android, appengine, and iOS so it could be launched worldwide, leading to a significant engagement improvement month-over-month.  Additionally, I fixed multiple bugs across Android, appengine, and, occasionally, iOS implementation and refactored spagghetti code to lead to fewer future problems.",
+    "company": "Snapchat"
+  },
+
+  {
+    "name": "Android App for Managing Purchased Ads",
+    "technology": ["Dart", "Flutter", "Java", "Android"],
+    "oneLiner": "Flutter Android app using existing APIs to allow management of purchased ad campaigns.",
+    "description": "I wrote the entire app myself using Flutter, which was still in pre-alpha at the time. Created mobile-friendly way for users to access their purchased Double Click Bid Manager ad campaigns, leading to a 5x improvement in time needed to view ad metrics.",
+    "company": "Google"
+  },
+
+  {
+    "name": "Tools to Support Computer Vision Machine Learning Research",
+    "technology": ["C++", "Python", "TensorFlow"],
+    "oneLiner": "Tools to support a machine learning computer vision research experiment.",
+    "description": "Wrote code to assemble randomized sets of N images from a chosen datastore, run them through an existing analysis tool, and output a summary of results and outliers. Wrote Python code to support k-means clustering TensorFlow experimentation.",
+    "company": "Google"
+  },
+
+  {
+    "name": "Web Services Registry and Repository",
+    "technology": ["Java", "ebXML", "Apache Maven", "Apache Tomcat", "Derby", "SOAP"],
+    "oneLiner": "Part of a SOAP web service system which lets .",
+    "description": "Built a registry and repository to maintain and allow look-up for services in a Service Oriented Architecture.",
+    "company": "MIT Lincoln Laboratory"
+  },
+  {
+    "name": "Knock Knock Joke Generator",
+    "technology": ["Python", "NLTK"],
+    "oneLiner": "Computational humor prototype that generates simple knock knock jokes.",
+    "description": "I wrote this knock knock joke generator which evaluates corpuses for punchlines matching a user-provided 'Who's there' value.",
+    "company": "University of Washington Tacoma"
+  }
+]
