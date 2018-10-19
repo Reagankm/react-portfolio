@@ -1,0 +1,112 @@
+.glass-nav {
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 24px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
+  margin-bottom: 20px; /* To match previous navbar margin */
+  padding-bottom: 15px; /* To match the nav links */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  border-radius: 0;
+}
+
+.navbar-nav > li:not(:first-child) {
+  margin-left: 50px;
+}
+
+/* Give navbar a frosted background */
+.navbar-default {
+  margin-bottom: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-color: rgba(255, 255, 255, 0) !important; /* Clear so we can see the glass underneath */
+  background-image: inherit;
+  border: none;
+  font-size: 24px;
+}
+
+.nav.navbar-nav {
+  display: inline-block;
+  float: inherit !important;
+}
+
+.navbar-default .subtitle {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.navbar.centeredNav .navbar-inner {
+  text-align: center;
+}
+
+.navbar.centeredNav .navbar-inner .nav {
+  display: inline-block;
+  float: none;
+}
+
+/* Make nav item text visible */
+.navbar-default .navbar-nav>li>a .subtitle, .navbar-default .navbar-nav > .active > a .subtitle, .navbar-default .navbar-nav>.active>a .subtitle, .navbar-default .navbar-nav>.open>a .subtitle{
+  color: #000;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: inherit;
+  background-image: inherit;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+  background-image: inherit;
+  background-color: inherit;
+}
+
+.navbar-default .navbar-nav > li > a:hover .subtitle, .navbar-default .navbar-nav > li > a:focus .subtitle, .navbar-default .navbar-nav>.active>a:focus .subtitle, .navbar-default .navbar-nav>.active>a:hover .subtitle {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+  box-shadow: inherit;
+  -webkit-box-shadow: inherit;
+}
+
+.menuHeadline {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.menuHeadline .well {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  background-image: inherit;
+  background-color: rgba(255, 255, 255, .4);
+  border: none;
+  margin-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
+
+/* Portrait phones and smaller */
+@media (max-width: 767px) {
+  .navbar-nav > li:not(:first-child) {
+    margin-left: 0px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .menuHeadline {
+    margin-top: 0px;
+  }
+}
