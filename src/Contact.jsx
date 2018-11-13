@@ -69,7 +69,7 @@ class Contact extends Component {
 
 
           <div className='email'>
-            Email me at <a href='mailto:reagan@reagankm.com'>reagan@reagankm.com</a>
+            Email me at <a href='mailto:reagankm@gmail.com'>reagankm@gmail.com</a>
           </div>
 
         </div>
