@@ -7,6 +7,7 @@ import { renderProjects } from './Project';
 import chillah from './snap-ghost-yellow.png';
 import g from './Google_G_Logo.svg';
 import lissajous from './LL_Logo.png';
+import indeed from './Indeed_Logo.png';
 
 import './Experience.css';
 import './fonts.css';
@@ -45,14 +46,17 @@ class Experience extends Component {
         </Row>
 
         <Row className='exp-row-eq-height three-columns-per-row'>
-          <Col sm={4}>
-            <WorkExperience company='Snapchat' image={chillah} title='Software Engineer' dates='August 2017 - Present' />
+          <Col sm={3}>
+            <WorkExperience company='Indeed' image={indeed} title='Software Engineer' dates='Apr 2019 - present' />
           </Col>
-          <Col sm={4}>
+          <Col sm={3}>
+            <WorkExperience company='Snapchat' image={chillah} title='Software Engineer' dates='August 2017 - Apr 2019' />
+          </Col>
+          <Col sm={3}>
             <WorkExperience company='Google' image={g} title='Software Engineer' dates='Sep 2016 - Aug 2017' />
           </Col>
-          <Col sm={4}>
-            <WorkExperience company='MIT Lincoln Laboratory' image={lissajous} title='Summer Research Intern' dates='June 2015 - Aug 2016' />
+          <Col sm={3}>
+            <WorkExperience company='MIT Lincoln Laboratory' image={lissajous} title='Research Intern' dates='June 2015 - Aug 2016' />
           </Col>
         </Row>
 
@@ -79,13 +83,13 @@ class Experience extends Component {
           <Panel className='glass-panel ultra'>
             <Row>
               <Col xs={4}>
-                <Skills heading='Top Skills' technology={['Java', 'Android', 'React', 'Redux', 'TypeScript', 'Git']} />
+      <Skills heading='Top Skills' technology={['Java', 'Spring Boot', 'MongoDB', 'Git']} />
               </Col>
               <Col xs={4}>
-                <Skills heading='Secondary Skills' technology={['Python', 'Dart', 'Flutter', 'Unix Shell Scripting', 'HTML', 'CSS']} />
+                <Skills heading='Secondary Skills' technology={['Android', 'Unix Shell Scripting', 'Mockito', 'Lombok', 'Swagger', 'Gradle']} />
               </Col>
               <Col xs={4}>
-                <Skills heading="Other Tech I've Worked With" technology={['C', 'C++', 'Go', 'NLTK', 'TensorFlow', 'MySQL', 'PHP', 'D3js', 'Maven']} />
+                <Skills heading="Other Tech I've Worked With" technology={['Python', 'Dart', 'Flutter', 'C', 'C++', 'MySQL', 'PHP', 'Maven']} />
               </Col>
             </Row>
 

@@ -1,6 +1,23 @@
 [
 
   {
+    "name": "Projects Worldwide",
+    "technology": ["Java", "Spring Boot", "Mockito", "JIRA", "Kibana", "DataDog"],
+    "oneLiner": "Designed, implemented, and launched feature from US-only to worldwide.",
+    "description": "Increased DAU 30% by launching our feature to non-US users. This required work across coordination and work across 7 code bases and 3 teams.  I wrote the design documents, discovered and planned for edge cases, wrote the tickets, and completed 70% of the implementation myself. Worked closely with QA to perform internal testing and triage bugs.",
+    "company": "Indeed"
+  },
+
+  {
+    "name": "Recruiter Projects",
+    "technology": ["Java", "Spring Boot", "MongoDB", "Lombok", "Swagger"],
+    "oneLiner": "Allows recruiters to organize jobseekers into projects from which they can perform contacting and view updates.",
+    "description": "I worked with one other backend engineer to complete the REST APIs and data backend for the initial launch and also wrote and maintained unit and integration tests. I participated in ongoing maintenance including documentation and supporting the service on call.",
+    "company": "Indeed"
+  },
+
+
+  {
     "name": "Professional Portfolio Website",
     "technology": ["React.js", "VPS", "nginx", "Ubuntu", "Linode", "HTML", "CSS"],
     "oneLiner": "A responsive website to display my portfolio and provide contact information.",
