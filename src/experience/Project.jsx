@@ -3,7 +3,7 @@ import { Label, Row, Col, Well } from 'react-bootstrap';
 
 import projectData from './projects.json';
 import './Project.css';
-import './fonts.css';
+import '../fonts.css';
 
 //name: string, technology: string[], description: string, company: string
 export function Project(props) {

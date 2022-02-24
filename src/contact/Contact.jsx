@@ -8,7 +8,7 @@ import 'font-awesome/less/font-awesome.less';
 import portrait from './boat-opt.jpg';
 
 import './Contact.css';
-import './fonts.css';
+import '../fonts.css';
 
 class Contact extends Component {
 

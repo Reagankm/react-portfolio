@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Panel } from 'react-bootstrap';
 
 import './Employment.css';
-import './fonts.css';
+import '../fonts.css';
 
 // company: string, image: imported file, title: string, and dates: string
 export function WorkExperience(props) {
