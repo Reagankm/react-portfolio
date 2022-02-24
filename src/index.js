@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import Base from './BasePage';
-import Contact from './Contact';
-import Experience from './Experience';
-import Main from './Main';
+import Contact from './contact/Contact';
+import Experience from './experience/Experience';
+import Main from './main/Main';
 import ScrollToTop from './ScrollToTop';
 import './index.css';
 
