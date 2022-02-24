@@ -10,7 +10,7 @@ import lissajous from './LL_Logo.png';
 import indeed from './Indeed_Logo.png';
 
 import './Experience.css';
-import './fonts.css';
+import '../fonts.css';
 
 // heading: string, technology: string[]
 function Skills(props) {
