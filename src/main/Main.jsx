@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Main.css';
-import './fonts.css';
+import '../fonts.css';
 
 class Main extends Component {
 
