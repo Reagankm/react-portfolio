@@ -57,17 +57,7 @@ class Experience extends Component {
 
                     </Panel>
                 </Row>
-
-                <Row className='heading ultra' id='projects'>
-                    Selected Projects
-                </Row>
-                <Row>
-
-                    <Panel className='glass-panel ultra'>
-                        {renderProjects()}
-                    </Panel>
-                </Row>
-
+                {renderProjects()}
             </Grid>
         );
     }
