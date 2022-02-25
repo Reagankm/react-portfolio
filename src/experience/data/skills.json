@@ -1,0 +1,34 @@
+[
+  {
+    "type": "Top Tech",
+    "values": [
+      "Java",
+      "Spring Boot",
+      "AWS SNS",
+      "AWS SQS",
+      "AWS Lambda",
+      "AWS Console"
+    ]
+  },
+  {
+    "type": "Secondary Tech",
+    "values": [
+      "Android",
+      "Unix Shell Scripting",
+      "MongoDB",
+      "Terraform"
+    ]
+  },
+  {
+    "type": "Less Recent Tech",
+    "values": [
+      "Dart",
+      "Flutter",
+      "C",
+      "C++",
+      "MySQL",
+      "PHP",
+      "Python"
+    ]
+  }
+]
