@@ -1,10 +1,17 @@
 [
+  {
+    "name": "AWS Notification Integration",
+    "technology": ["Terraform", "Kion", "AWS SNS", "AWS SQS", "AWS Console"],
+    "oneLiner": "Integrated our service with AWS SNS for near-realtime status updates",
+    "description": "As an early-adopter for this internal tech, I wrote terraform scripts to spin up a new SQS subscribed to an SNS publishing notifications when jobseeker interview status is changed. Then I integrated this into our existing service by consuming new messages from the SQS and processing the status changes in our database.",
+    "company": "Indeed"
+  },
 
   {
     "name": "Projects Worldwide",
     "technology": ["Java", "Spring Boot", "Mockito", "JIRA", "Kibana", "DataDog"],
     "oneLiner": "Designed, implemented, and launched feature from US-only to worldwide.",
-    "description": "Increased DAU 30% by launching our feature to non-US users. This required work across coordination and work across 7 code bases and 3 teams.  I wrote the design documents, discovered and planned for edge cases, wrote the tickets, and completed 70% of the implementation myself. Worked closely with QA to perform internal testing and triage bugs.",
+    "description": "Increased DAU 30% by launching our feature to non-US users. This required coordination and work across 7 code bases and 3 teams.  I wrote the design documents, discovered and planned for edge cases, wrote the tickets, and completed 70% of the implementation myself. Worked closely with QA to perform internal testing and triage bugs.",
     "company": "Indeed"
   },
 
@@ -29,7 +36,7 @@
     "name": "Context Cards",
     "technology": ["Java", "Android", "Appengine", "iOS", "Objective C"],
     "oneLiner": "Feature that lets users swipe up to view additional information about a location or product.",
-    "description": "I localized this feature in codebases across Android, appengine, and iOS so it could be launched worldwide, leading to a significant engagement improvement month-over-month.  Additionally, I fixed multiple bugs across Android, appengine, and, occasionally, iOS implementation and refactored spagghetti code to lead to fewer future problems.",
+    "description": "Launched this feature worldwide after localizing it in Android, appengine, and iOS codebases, leading to a significant engagement improvement month-over-month.",
     "company": "Snapchat"
   },
 
@@ -42,20 +49,13 @@
   },
 
   {
-    "name": "Tools to Support Computer Vision Machine Learning Research",
-    "technology": ["C++", "Python", "TensorFlow"],
-    "oneLiner": "Tools to support a machine learning computer vision research experiment.",
-    "description": "Wrote code to assemble randomized sets of N images from a chosen datastore, run them through an existing analysis tool, and output a summary of results and outliers. Wrote Python code to support k-means clustering TensorFlow experimentation.",
-    "company": "Google"
-  },
-
-  {
     "name": "Web Services Registry and Repository",
     "technology": ["Java", "ebXML", "Apache Maven", "Apache Tomcat", "Derby", "SOAP"],
     "oneLiner": "Part of a SOAP web service system which lets .",
     "description": "Built a registry and repository to maintain and allow look-up for services in a Service Oriented Architecture.",
     "company": "MIT Lincoln Laboratory"
   },
+
   {
     "name": "Knock Knock Joke Generator",
     "technology": ["Python", "NLTK"],
