@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Tools to Support Computer Vision Machine Learning Research",
+    "technology": ["C++", "Python", "TensorFlow"],
+    "oneLiner": "Tools to support a machine learning computer vision research experiment.",
+    "description": "Wrote code to assemble randomized sets of N images from a chosen datastore, run them through an existing analysis tool, and output a summary of results and outliers. Wrote Python code to support k-means clustering TensorFlow experimentation.",
+    "company": "Google"
+  }
+]
