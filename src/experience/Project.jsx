@@ -1,12 +1,12 @@
 import React from 'react';
 import { Label, Row, Col, Well } from 'react-bootstrap';
 
-import projectData from './projects.json';
+import projectData from './data/projects.json';
 import './Project.css';
 import '../fonts.css';
 
 //name: string, technology: string[], description: string, company: string
-export function Project(props) {
+function Project(props) {
 
   return (
     <Well className='project'>
