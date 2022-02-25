@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label, Row, Col, Well } from 'react-bootstrap';
+import { Label, Row, Col, Well, Panel } from 'react-bootstrap';
 
 import projectData from './data/projects.json';
 import './Project.css';
@@ -40,7 +40,7 @@ function Project(props) {
 }
 
 export function renderProjects() {
-  return projectData.map((proj, index) => {
+  const projectRows = projectData.map((proj, index) => {
     if (index % 2 !== 0) {
       // We've already processed this project
       return null;
@@ -78,4 +78,17 @@ export function renderProjects() {
     );
 
   });
+
+  return (
+      <div>
+          <Row className='heading ultra' id='projects'>
+              Selected Projects
+          </Row>
+          <Row>
+              <Panel className='glass-panel ultra'>
+                  {projectRows}
+              </Panel>
+          </Row>
+      </div>
+  );
 }
