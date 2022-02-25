@@ -35,9 +35,9 @@
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 547px) {
+@media (max-width: 675px) {
 
-  .three-columns-per-row {
+  .four-columns-per-row {
     display: none;
   }
 
