@@ -1,11 +1,5 @@
-# CupbearerWebsite
+`npm start` to run for local development
 
-To deploy (to make the changes live at https://cupbearer.app ):
+`npm run build` to build in order to deploy on Linode
 
-Go to website/ then run ./deploy
-
-If you get an error about it not being able to find the key, try:
-
-ssh-add -K ~/.ssh/id_rsa
-
-And then retry the deploy script
+`./deploy` to run the deploy script to make changes live
