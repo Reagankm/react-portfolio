@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from 'react';
 
 import MenuHeadline from './MenuHeadline';
 import './BasePage.css';
-import UnderlineMenu from './UnderlineMenu';
+import Menu from './Menu';
 
 type Props = PropsWithChildren<{}>;
 
@@ -16,7 +16,7 @@ const BasePage: React.FC<Props> = (props) => {
         <div className="base-page">
             <header>
                 <div className='menu-panel'>
-                    <UnderlineMenu />
+                    <Menu />
                     <MenuHeadline />
                 </div>
             </header>

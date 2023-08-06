@@ -5,7 +5,7 @@
 
 .mainName {
   font-size: 5rem;
-  margin-top: 21vh;
+  margin-top: 15vh;
 }
 
 .mainTitle {
@@ -18,7 +18,7 @@
 @media (max-width: 768px) {
   .mainName {
     font-size: 3.5rem;
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
   .mainTitle {
     font-size: 2.5rem;
