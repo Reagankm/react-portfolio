@@ -21,5 +21,8 @@
     .menu-headline {
         margin-top: .5rem;
         margin-bottom: .5rem;
+        flex: 1;
+        padding-left: 16px; /* to match navbar */
+        padding-right: 16px;
     }
 }

@@ -21,6 +21,11 @@ header .menu-panel .navbar.fixed-top {
     color: #000000;
 }
 
+.navbar-light .navbar-nav .nav-item a:hover {
+    color: #000000;
+    text-decoration-line: none;
+}
+
 .navbar-nav > div > a {
     text-shadow: rgba(255, 255, 255, .25) 1px 1px 1px;
 }
@@ -32,6 +37,16 @@ header .menu-panel .navbar.fixed-top {
 
 /* Portrait phones and smaller */
 @media (max-width: 767px) {
+
+    .menu-panel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar.ultra {
+        flex: 1;
+    }
 
     .navbar .container .navbar-nav > div:not(:first-child) {
         margin-left: 0px;
