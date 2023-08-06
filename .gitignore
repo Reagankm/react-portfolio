@@ -5,8 +5,6 @@ notes.txt
 node_modules/*
 build/*
 .idea/*
-website/node_modules/*
-website/build/*
 
 # Created by https://www.toptal.com/developers/gitignore/api/react,emacs
 # Edit at https://www.toptal.com/developers/gitignore?templates=react,emacs
