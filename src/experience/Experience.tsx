@@ -11,15 +11,15 @@ import SkillDisplay from './SkillDisplay';
 
 const Experience = () => {
 
-    useEffect(() => {
-        document.body.style.overflow = 'visible';
-        return () => {
-            document.body.style.overflow = 'hidden';
-        }
-    }, []);
+    // useEffect(() => {
+    //     document.body.style.overflow = 'visible';
+    //     return () => {
+    //         document.body.style.overflow = 'hidden';
+    //     }
+    // }, []);
 
     return (
-        <Container>
+        <Container className='experience-container'>
             {renderEmploymentHistory()}
             <SkillDisplay />
             {renderProjects()}

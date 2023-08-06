@@ -12,13 +12,13 @@ import '../fonts.css';
 
 const Contact: React.FC = () => {
 
-  useEffect(() => {
-    document.body.style.overflow = 'visible';
-
-    return () => {
-      document.body.style.overflow = 'hidden';
-    }
-  }, []);
+  // useEffect(() => {
+  //   document.body.style.overflow = 'visible';
+  //
+  //   return () => {
+  //     document.body.style.overflow = 'hidden';
+  //   }
+  // }, []);
 
   return (
     <Card className='contact-panel ultra'>

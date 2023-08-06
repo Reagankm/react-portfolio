@@ -1,7 +1,6 @@
 body {
-  height: 100vh;
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
   background: black url('./dinos-horiz-opt.jpg') fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -9,12 +8,9 @@ body {
   background-size: cover; /* Fill entire page */
 }
 
-html {
+.page-wrapper {
   height: 100vh;
-}
-
-.base-page {
-  margin-top: 165px;
+  padding-top: 15vh;
 }
 
 .menu-panel {
@@ -29,11 +25,7 @@ html {
 /****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
 
 @media (max-width: 767px) {
-  .base-page {
-    margin-top: 200px;
-  }
-
-  body {
-    background-size: 200% auto;
+  .page-wrapper {
+    padding-top: 5vh;
   }
 }

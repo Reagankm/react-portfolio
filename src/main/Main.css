@@ -1,26 +1,38 @@
-.mainHeadings {
+.main-headings {
   color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  text-shadow: 0 .1em .2em rgba(0,0,0,.6);
 }
 
 .mainName {
-  font-size: 64px;
-  margin-top: 275px;
+  font-size: 5rem;
+  margin-top: 21vh;
 }
 
 .mainTitle {
-  font-size: 50px;
-  margin-top: -10px;
+  font-size: 4rem;
+  margin-top: -.25rem;
 }
 
 /****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
 
+@media (max-width: 768px) {
+  .mainName {
+    font-size: 3.5rem;
+    margin-top: 15vh;
+  }
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+}
+
+
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .mainName {
-    font-size: 42px;
+    font-size: 3rem;
+    margin-top: 15vh;
   }
   .mainTitle {
-    font-size: 35px;
+    font-size: 2.25rem;
   }
 }

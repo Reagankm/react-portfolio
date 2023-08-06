@@ -1,3 +1,7 @@
+.page-wrapper .experience-container {
+  overflow: auto;
+}
+
 .glass-panel {
   background-color: rgba(255, 255, 255, .6) !important;
   font-size: 18px;

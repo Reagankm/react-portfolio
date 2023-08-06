@@ -1,8 +1,6 @@
 import React, { PropsWithChildren } from 'react';
-import { useLocation } from 'react-router-dom';
-import MenuHeadline from './MenuHeadline';
 
-import Menu from './Menu';
+import MenuHeadline from './MenuHeadline';
 import './BasePage.css';
 import UnderlineMenu from './UnderlineMenu';
 
@@ -14,23 +12,19 @@ type Props = PropsWithChildren<{}>;
 */
 const BasePage: React.FC<Props> = (props) => {
 
-    //let location = useLocation();
-
     return (
         <div className="base-page">
             <header>
                 <div className='menu-panel'>
-                    {/*<UnderlineMenu currentPath={location.pathname} />*/}
                     <UnderlineMenu />
                     <MenuHeadline />
-                    {/*<MenuHeadline currentPath={location.pathname} />*/}
                 </div>
-                {/*<Menu currentPath={location.pathname} />*/}
             </header>
-            {props.children}
+            <div className='page-wrapper'>
+                {props.children}
+            </div>
         </div>
     );
-
 }
 
 export default BasePage;
