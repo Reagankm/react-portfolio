@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  background: black url('./dinos-horiz-opt.jpg') fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; /* Fill entire page */
+}
+
+html {
+  height: 100vh;
+}
+
+.base-page {
+  margin-top: 165px;
+}
+
+.menu-panel {
+  background-color: rgba(255, 255, 255, .4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 3rem;
+}
+
+/****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
+
+@media (max-width: 767px) {
+  .base-page {
+    margin-top: 200px;
+  }
+
+  body {
+    background-size: 200% auto;
+  }
+}
