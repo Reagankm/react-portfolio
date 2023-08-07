@@ -1,11 +1,10 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
 import '../fonts.css';
 import './Experience.css';
 
 import EmploymentHistory from './EmploymentHistory';
-import { renderProjects } from './Project';
+import ProjectDisplay from './ProjectDisplay';
 import SkillDisplay from './SkillDisplay';
 
 const Experience = () => {
@@ -14,7 +13,7 @@ const Experience = () => {
         <div className='experience-container'>
             <EmploymentHistory />
             <SkillDisplay />
-            {renderProjects()}
+            <ProjectDisplay />
         </div>
     );
 

@@ -13,7 +13,9 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 1.9rem;
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
 }
 
 .section {
@@ -21,7 +23,8 @@
 }
 
 .section.project-heading {
-  flex-grow: 1;
+  /*flex-grow: 1;*/
+  font-size: 1.4rem;
 }
 
 .project-description {
@@ -32,8 +35,12 @@
   flex-grow: 1;
 }
 
-.project-tech .label:not(:last-child) {
-  margin-right: 10px;
+.project-tech {
+  margin-top: 10px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-tech .label {

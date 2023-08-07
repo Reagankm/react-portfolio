@@ -8,6 +8,7 @@
 .experience-section {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 
 .glass-panel {
@@ -22,7 +23,6 @@
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
-
 
 .two-columns-per-row {
   display: none;
@@ -228,15 +228,12 @@
   }
 }
 
-<<<<<<< HEAD
 @media (max-width: 540px) {
   .glass-panel {
     font-size: .9rem;
   }
 }
 
-=======
->>>>>>> 1644bb48934faee02b34c944914903c0b500b113
 @media (max-width: 450px) {
 
   .heading {

@@ -1,9 +1,16 @@
 [
   {
+    "name": "Cupbearer",
+    "technology": ["React Native", "Typescript", "GCP Firebase", "GCP Firestore", "GCP Storage", "GCP Functions"],
+    "oneLiner": "Researched, designed, and built a cross-platform app for bra organization and education",
+    "description": "Oversaw every piece of the process, from user research to Figma design to engineering, scrum mastering, and analytics.  Built a cross-platform app that, at MVP, allows users to catalog, sort, rate, and organize their bras.",
+    "company": "Cupbearer"
+  },
+  {
     "name": "AWS Notification Integration",
     "technology": ["Terraform", "Kion", "AWS SNS", "AWS SQS", "AWS Console"],
     "oneLiner": "Integrated our service with AWS SNS for near-realtime status updates",
-    "description": "As an early-adopter for this internal tech, I wrote terraform scripts to spin up a new SQS subscribed to an SNS publishing notifications when jobseeker interview status is changed. Then I integrated this into our existing service by consuming new messages from the SQS and processing the status changes in our database.",
+    "description": "As an early-adopter for this internal tech, I wrote terraform scripts to spin up a new SQS subscribed to an SNS publishing notifications when jobseeker interview status changes, and integrated it into our existing service.",
     "company": "Indeed"
   },
 
@@ -19,7 +26,7 @@
     "name": "Recruiter Projects",
     "technology": ["Java", "Spring Boot", "MongoDB", "Lombok", "Swagger"],
     "oneLiner": "Allows recruiters to organize jobseekers into projects from which they can perform contacting and view updates.",
-    "description": "I worked with one other backend engineer to complete the REST APIs and data backend for the initial launch and also wrote and maintained unit and integration tests. I participated in ongoing maintenance including documentation and supporting the service on call.",
+    "description": "As one of two backend engineers, completed the REST APIs and data backend for the initial launch of this new product.  Then participated in ongoing maintenance and support, including fleshing out documentation and monitoring the service on call.",
     "company": "Indeed"
   },
 
@@ -38,29 +45,7 @@
     "oneLiner": "Feature that lets users swipe up to view additional information about a location or product.",
     "description": "Launched this feature worldwide after localizing it in Android, appengine, and iOS codebases, leading to a significant engagement improvement month-over-month.",
     "company": "Snapchat"
-  },
-
-  {
-    "name": "Android App for Managing Purchased Ads",
-    "technology": ["Dart", "Flutter", "Java", "Android"],
-    "oneLiner": "Flutter Android app using existing APIs to allow management of purchased ad campaigns.",
-    "description": "I wrote the entire app myself using Flutter, which was still in pre-alpha at the time. Created mobile-friendly way for users to access their purchased Double Click Bid Manager ad campaigns, leading to a 5x improvement in time needed to view ad metrics.",
-    "company": "Google"
-  },
-
-  {
-    "name": "Web Services Registry and Repository",
-    "technology": ["Java", "ebXML", "Apache Maven", "Apache Tomcat", "Derby", "SOAP"],
-    "oneLiner": "Part of a SOAP web service system which lets .",
-    "description": "Built a registry and repository to maintain and allow look-up for services in a Service Oriented Architecture.",
-    "company": "MIT Lincoln Laboratory"
-  },
-
-  {
-    "name": "Knock Knock Joke Generator",
-    "technology": ["Python", "NLTK"],
-    "oneLiner": "Computational humor prototype that generates simple knock knock jokes.",
-    "description": "I wrote this knock knock joke generator which evaluates corpuses for punchlines matching a user-provided 'Who's there' value.",
-    "company": "University of Washington Tacoma"
   }
+
+
 ]
