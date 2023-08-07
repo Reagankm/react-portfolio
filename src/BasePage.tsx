@@ -1,8 +1,8 @@
 import React, { PropsWithChildren } from 'react';
 
-import MenuHeadline from './MenuHeadline';
 import './BasePage.css';
 import Menu from './Menu';
+import MenuHeadline from './MenuHeadline';
 
 type Props = PropsWithChildren<{}>;
 

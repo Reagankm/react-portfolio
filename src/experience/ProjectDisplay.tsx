@@ -1,11 +1,11 @@
 import React from 'react';
-import { Row, Col, Card } from 'react-bootstrap';
-import SimpleCol from '../SimpleCol';
+import { Card, Row } from 'react-bootstrap';
 
-import projectData from './data/projects.json';
-import './ProjectDisplay.css';
 import '../fonts.css';
+import SimpleCol from '../SimpleCol';
+import projectData from './data/projects.json';
 import ProjectCard from './ProjectCard';
+import './ProjectDisplay.css';
 
 
 const ProjectDisplay: React.FC = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import './Main.css';
 import '../fonts.css';
+import './Main.css';
 
 const Main: React.FC = () => {
     return (

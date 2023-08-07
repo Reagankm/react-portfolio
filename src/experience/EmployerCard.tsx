@@ -1,9 +1,9 @@
 import React, { PropsWithChildren } from 'react';
 import { Card } from 'react-bootstrap';
 
-import './EmploymentHistory.css';
 import SimpleCol from '../SimpleCol';
 import SimpleRow from '../SimpleRow';
+import './EmploymentHistory.css';
 
 type EmployerCardProps = PropsWithChildren<{
     company: string,

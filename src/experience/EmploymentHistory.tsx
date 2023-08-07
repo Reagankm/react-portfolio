@@ -1,10 +1,9 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
 
-import EmployerCard from './EmployerCard';
 import SimpleCol from '../SimpleCol';
 import SimpleRow from '../SimpleRow';
 import employmentHistory from './data/employment_history.json';
+import EmployerCard from './EmployerCard';
 import './EmploymentHistory.css';
 
 const EmploymentHistory: React.FC = () => {
@@ -38,7 +37,6 @@ const EmploymentHistory: React.FC = () => {
             <div className='scrolling-wrapper'>
             <SimpleRow className='card-row'>
                 {newEmployerComponents.map((employer) => {
-                    // return (<Col className='scrollable-card' sm={3}>{employer}</Col>);
                     return (<SimpleCol className='scrollable-card'>{employer}</SimpleCol>);
                 })}
             </SimpleRow>

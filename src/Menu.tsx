@@ -1,15 +1,11 @@
-import React, { PropsWithChildren, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-
-import './Menu.css';
-import './fonts.css';
 import { Link } from 'react-router-dom';
 
-type Props = PropsWithChildren<{
-    // currentPath: string;
-}>;
+import './fonts.css';
+import './Menu.css';
 
-const Menu: React.FC<Props> = (props) => {
+const Menu: React.FC = () => {
     const [activeKey, setActiveKey] = useState<string | undefined>()
 
     useEffect(() => {
@@ -29,15 +25,12 @@ const Menu: React.FC<Props> = (props) => {
                 <Nav onSelect={onSelect} activeKey={activeKey}>
                     <Nav.Item>
                         <Link to={'/'}>Home</Link>
-                        {/*<Nav.Link eventKey='0' href='/'>Home</Nav.Link>*/}
                     </Nav.Item>
                     <Nav.Item>
                         <Link to={'/experience'}>Experience</Link>
-                        {/*<Nav.Link eventKey='1' href='/experience'>Experience</Nav.Link>*/}
                     </Nav.Item>
                     <Nav.Item>
                         <Link to={'/contact'}>Contact</Link>
-                        {/*<Nav.Link eventKey='2' href='/contact'>Contact</Nav.Link>*/}
                     </Nav.Item>
                 </Nav>
             </Container>

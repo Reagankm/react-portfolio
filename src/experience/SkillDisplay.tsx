@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 
-import SkillCategory from './SkillCategory';
 import skillData from './data/skills.json';
+import SkillCategory from './SkillCategory';
 
 type JsonSkill = {
     type: string,
@@ -29,7 +29,6 @@ const SkillDisplay: React.FC = () => {
                             );
                         })}
                     </Row>
-
                 </Card>
             </Row>
         </div>

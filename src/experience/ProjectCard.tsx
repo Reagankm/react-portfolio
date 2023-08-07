@@ -1,9 +1,9 @@
 import React, { PropsWithChildren } from 'react';
 import { Card } from 'react-bootstrap';
 
-import './ProjectDisplay.css';
 import '../fonts.css';
 import SimpleBadge from '../SimpleBadge';
+import './ProjectDisplay.css';
 
 type Props = PropsWithChildren<{
     name: string,

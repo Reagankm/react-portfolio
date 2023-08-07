@@ -1,14 +1,10 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import { Card } from 'react-bootstrap';
-
-import './MenuHeadline.css';
 import { useLocation } from 'react-router-dom';
 
-type Props = PropsWithChildren<{
-    // currentPath: string;
-}>;
+import './MenuHeadline.css';
 
-const MenuHeadline: React.FC<Props> = (props) => {
+const MenuHeadline: React.FC = () => {
     let location = useLocation();
     const getHeadline = (path: string): string | undefined => {
         const mapPathToHeadline = new Map<string, string>([
