@@ -1,9 +1,8 @@
 .experience-container {
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
-  /*align-content: center;*/
-  /*justify-content: center;*/
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .experience-section {
@@ -13,8 +12,8 @@
 
 .glass-panel {
   background-color: rgba(255, 255, 255, .6) !important;
-  font-size: 18px;
-  padding: 30px;
+  font-size: 1.12rem;
+  padding: 1.9rem;
 }
 
 .heading {
@@ -24,13 +23,6 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }
 
-.exp-row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  padding-bottom: 30px;
-}
 
 .two-columns-per-row {
   display: none;
@@ -39,17 +31,27 @@
 /****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
 
 @media (max-width: 767px) {
-  .container {
-    padding-top: 15px;
+  .heading {
+    font-size: 1.75rem;
   }
-  .col-sm-4 {
-    width: 33.33333333%;
-    float: left;
+
+  .experience-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
   }
+
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 675px) {
+
+  .heading {
+    font-size: 1.5rem;
+  }
 
   .four-columns-per-row {
     display: none;
@@ -221,5 +223,18 @@
   }
   .col-xxs-offset-0 {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .glass-panel {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .heading {
+    font-size: 1.25rem;
   }
 }

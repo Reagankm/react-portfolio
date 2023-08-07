@@ -1,34 +1,36 @@
 [
   {
-    "type": "Top Tech",
+    "type": "Active Tech Stack",
     "values": [
-      "Java",
-      "Spring Boot",
-      "AWS SNS",
-      "AWS SQS",
-      "AWS Lambda",
-      "AWS Console"
+      "React Native",
+      "Typescript",
+      "NoSQL",
+      "Google Cloud aka GCP: Firebase, Firestore, Storage, Functions, Logs Explorer"
     ]
   },
   {
-    "type": "Secondary Tech",
+    "type": "Prior Tech Stack",
     "values": [
-      "Android",
-      "Unix Shell Scripting",
+      "Java",
+      "Spring Boot",
       "MongoDB",
-      "Terraform"
+      "Terraform",
+      "Amazon Web Services aka AWS: SNS, SQS, Lambda"
     ]
   },
   {
     "type": "Less Recent Tech",
     "values": [
+      "Android",
       "Dart",
       "Flutter",
-      "C",
       "C++",
+      "SQL",
       "MySQL",
+      "Python",
+      "C",
       "PHP",
-      "Python"
+      "Go"
     ]
   }
 ]
