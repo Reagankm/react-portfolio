@@ -1,0 +1,129 @@
+img {
+    max-height: 100%;
+    max-width: 4vw;
+    min-width: 4vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.card-row {
+    margin-bottom: 1vh;
+}
+
+.scrollable-card {
+    display: inline-block;
+    /* Below is copied from bootstrap's columns */
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.employment-history .heading#employment {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.exp-company {
+    flex-grow: 0;
+}
+
+.work-exp-panel .simple-col {
+    justify-content: center;
+}
+
+.work-exp-panel {
+    background-color: rgba(255, 255, 255, .6) !important;
+    font-size: 1.12rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontal */
+    justify-content: center; /* vertical */
+}
+
+.logo-row {
+    display: flex;
+}
+
+.employment-history #employment span {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.employment-history {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-exp-panel .name-and-dates {
+    flex-grow: 1;
+}
+
+/****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
+
+@media (max-width: 767px) {
+    .scrolling-wrapper {
+        max-width: 90vw;
+    }
+
+    .logo-row img {
+        max-width: 4.5vw;
+        min-width: 4.5vw;
+    }
+
+    .work-exp-panel img {
+        max-width: 6vw;
+        min-width: 6vw;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .col-sm-4 {
+        width: 33.33333333%;
+        float: left;
+    }
+}
+
+@media (max-width: 650px) {
+    .scrolling-wrapper {
+        max-width: 85vw;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 540px) {
+    .work-exp-panel {
+        font-size: .9rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .work-exp-panel img {
+        display: none;
+    }
+
+    .scrollable-card {
+        flex: 0 0 35%;
+        max-width: 28%;
+    }
+
+    .work-exp-panel .name-and-dates {
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+}

@@ -17,7 +17,7 @@
     "company": "Snapchat",
     "image": "/assets/snap-ghost-yellow.png",
     "title": "Software Engineer",
-    "oneLine": "Backend Android app and oncall support; fullstack React website",
+    "oneLine": "Backend Android app and oncall; fullstack React website",
     "dates": "Aug 2017 - Apr 2019"
   },
   {
@@ -31,7 +31,7 @@
     "company": "MIT Lincoln Laboratory",
     "image": "/assets/LL_Logo.png",
     "title": "Summer Intern",
-    "oneLine": "Backend infrastructure for military logistics",
+    "oneLine": "Backend infrastructure supporting military food supplies",
     "dates": "June 2015 - Aug 2015"
   }
 ]
