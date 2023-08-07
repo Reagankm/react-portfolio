@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Card } from 'react-bootstrap';
+import SimpleCol from '../SimpleCol';
 
 import projectData from './data/projects.json';
 import './ProjectDisplay.css';
@@ -21,25 +22,25 @@ const ProjectDisplay: React.FC = () => {
     return (
       <div>
         <Row key={proj.name} className='row-eq-height proj-row hide-on-sm'>
-          <Col xs={6}>
+          <SimpleCol className='lg-project'>
             <ProjectCard name={proj.name} technology={proj.technology} oneLine={proj.oneLiner} description={proj.description} company={proj.company} />
-          </Col>
+          </SimpleCol>
           {secondProj &&
-           <Col xs={6}>
+           <SimpleCol className='lg-project'>
              <ProjectCard name={secondProj.name} technology={secondProj.technology} oneLine={secondProj.oneLiner} description={secondProj.description} company={secondProj.company} />
-           </Col>
+           </SimpleCol>
           }
         </Row>
         <Row key={proj.name} className='row-eq-height proj-row hide-on-lg'>
-          <Col xs={10} xsOffset={1}>
+          <SimpleCol className='sm-project'>
             <ProjectCard name={proj.name} technology={proj.technology} oneLine={proj.oneLiner} description={proj.description} company={proj.company} />
-          </Col>
+          </SimpleCol>
         </Row>
         {secondProj &&
          <Row key={proj.name + '2'} className='row-eq-height proj-row hide-on-lg'>
-           <Col xs={10} xsOffset={1}>
+           <SimpleCol className='sm-project'>
              <ProjectCard name={secondProj.name} technology={secondProj.technology} oneLine={secondProj.oneLiner} description={secondProj.description} company={secondProj.company} />
-         </Col>
+         </SimpleCol>
          </Row>
           }
       </div>

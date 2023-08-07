@@ -3,11 +3,22 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 15px;
 }
 
-.proj-row:not(:last-child) {
+.proj-row {
   padding-bottom: 30px;
 }
+
+.lg-project {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*.proj-row:not(:last-child) {*/
+/*  padding-bottom: 30px;*/
+/*}*/
 
 .project {
   display: flex;
@@ -53,12 +64,7 @@
 
 /****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
 
-@media (max-width: 767px) {
-  .project-description {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
+@media (max-width: 999px) {
   .hide-on-lg {
     display: inherit;
   }
@@ -66,4 +72,21 @@
   .hide-on-sm {
     display: none;
   }
+
+  .project {
+    margin-bottom: 0;
+  }
+
+  .sm-project {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 }
