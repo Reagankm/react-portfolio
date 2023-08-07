@@ -106,10 +106,11 @@ img {
 
 /* Portrait phones and smaller */
 @media (max-width: 540px) {
+
     .employment-history #employment {
         justify-content: center;
     }
-    
+
     .employment-history #employment-span {
         flex: 0;
     }

@@ -33,9 +33,11 @@
 @media (max-width: 767px) {
   .heading {
     font-size: 1.75rem;
+
   }
 
   .experience-container {
+    padding-top: 15px;
     margin-left: 4rem;
     margin-right: 4rem;
     align-items: center;
@@ -226,12 +228,15 @@
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 540px) {
   .glass-panel {
     font-size: .9rem;
   }
 }
 
+=======
+>>>>>>> 1644bb48934faee02b34c944914903c0b500b113
 @media (max-width: 450px) {
 
   .heading {
