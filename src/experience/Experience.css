@@ -1,5 +1,14 @@
-.page-wrapper .experience-container {
-  overflow: auto;
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  /*align-content: center;*/
+  /*justify-content: center;*/
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .glass-panel {
@@ -9,7 +18,8 @@
 }
 
 .heading {
-  font-size: 24px;
+  align-self: center;
+  font-size: 2rem;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }

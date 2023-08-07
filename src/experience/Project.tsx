@@ -87,7 +87,7 @@ export const renderProjects = () => {
   });
 
   return (
-      <div>
+      <div className='experience-section'>
           <Row className='heading ultra' id='projects'>
               Selected Projects
           </Row>

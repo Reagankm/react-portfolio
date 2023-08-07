@@ -1,26 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container } from 'react-bootstrap';
 
-import { renderEmploymentHistory } from './Employment';
-import { renderProjects } from './Project';
-
-
-import './Experience.css';
 import '../fonts.css';
+import './Experience.css';
+
+import { EmploymentHistory } from './Employment';
+import { renderProjects } from './Project';
 import SkillDisplay from './SkillDisplay';
 
 const Experience = () => {
 
-    // useEffect(() => {
-    //     document.body.style.overflow = 'visible';
-    //     return () => {
-    //         document.body.style.overflow = 'hidden';
-    //     }
-    // }, []);
-
     return (
         <Container className='experience-container'>
-            {renderEmploymentHistory()}
+            <EmploymentHistory />
             <SkillDisplay />
             {renderProjects()}
         </Container>

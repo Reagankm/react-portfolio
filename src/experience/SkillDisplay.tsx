@@ -11,7 +11,7 @@ type JsonSkill = {
 
 const SkillDisplay: React.FC = () => {
     return (
-        <div>
+        <div className='experience-section'>
             <Row className='heading ultra' id='skills'>
                 Skills
             </Row>
