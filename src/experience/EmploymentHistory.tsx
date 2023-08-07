@@ -24,15 +24,15 @@ const EmploymentHistory: React.FC = () => {
     return (
         <div className='new employment-history'>
             <div className='heading ultra' id='employment'>
-                <div className='logo-row'>
-                    {logoArray.filter((logo, i) => {return i <= logoMidpoint})}
-                </div>
+                {/*<div className='logo-row'>*/}
+                {/*    {logoArray.filter((logo, i) => {return i <= logoMidpoint})}*/}
+                {/*</div>*/}
                 <div id='employment-span'>
                     <span>Employment History</span>
                 </div>
-                <div className='logo-row'>
-                    {logoArray.filter((logo, i) => {return i > logoMidpoint})}
-                </div>
+                {/*<div className='logo-row'>*/}
+                {/*    {logoArray.filter((logo, i) => {return i > logoMidpoint})}*/}
+                {/*</div>*/}
             </div>
             <div className='scrolling-wrapper'>
             <SimpleRow className='card-row'>

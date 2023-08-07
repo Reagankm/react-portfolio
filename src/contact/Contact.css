@@ -1,23 +1,22 @@
 .portrait {
   border-radius: 50%;
-  height: 350px;
-  padding-left: 15px;
-  padding-right: 15px;
+  height: 35vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .portrait-frame {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
 }
 
 .contact-panel {
   background-color: rgba(255, 255, 255, .6) !important;
-  font-size: 18px;
+  font-size: 1.9rem;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  padding: 30px;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
   max-width: 85%;
@@ -30,25 +29,49 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
 }
 
 .fa.inner {
   color: white;
 }
 
-.btn-toolbar {
+.button-row {
   justify-content: center;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
 }
 
-.contact-panel .btn {
-  font-size: 18px;
+.button-row a:not(:first-child) {
+  margin-left: .5rem;
+}
+
+.contact-panel button {
+  font-size: 1.25rem;
+  /* Copied from old school react-bootstrap Button */
+  text-shadow: 0 1px 0 #fff;
+  background-image: linear-gradient(to bottom, #fff 0, #e0e0e0 100%);
+  background-repeat: repeat-x;
+  padding: .4rem .8rem;
+  padding-bottom: .8rem;
+  margin-bottom: 0;
+  touch-action: manipulation;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.contact-panel a:hover {
+  outline: 0;
+}
+
+.contact-panel button:hover {
+  background-color: #e0e0e0;
+  background-position: 0 -15px;
+  color: #333;
+  border-color: #adadad;
 }
 
 .email {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
 }
 
@@ -57,8 +80,8 @@
 }
 
 .info {
-  margin-bottom: 25px;
-  font-size: 20px;
+  margin-bottom: 1.4rem;
+  font-size: 1.5rem;
 }
 
 /****************** MEDIA QUERIES FOR DIFFERENT SCREEN SIZES *****************/
@@ -66,15 +89,19 @@
 @media (max-width: 767px) {
 
   .contact-panel {
-    max-width: inherit;
+    max-width: 90vw;
   }
 
-  .contact-panel .btn {
-    font-size: 16px;
+  .contact-panel button {
+    font-size: 1.2rem;
   }
 
-  .btn {
+  button {
     padding-right: 6px;
     padding-left: 6px;
+  }
+
+  img.portrait {
+    margin-top: 20px;
   }
 }
