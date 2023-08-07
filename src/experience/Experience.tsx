@@ -5,6 +5,7 @@ import '../fonts.css';
 import './Experience.css';
 
 import { EmploymentHistory } from './Employment';
+import NewEmploymentHistory from './NewEmploymentHistory';
 import { renderProjects } from './Project';
 import SkillDisplay from './SkillDisplay';
 
@@ -12,7 +13,8 @@ const Experience = () => {
 
     return (
         <Container className='experience-container'>
-            <EmploymentHistory />
+            <NewEmploymentHistory />
+            {/*<EmploymentHistory />*/}
             <SkillDisplay />
             {renderProjects()}
         </Container>

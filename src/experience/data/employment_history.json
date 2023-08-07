@@ -1,26 +1,37 @@
 [
   {
+    "company": "Cupbearer",
+    "image": "/assets/cupbearer-logo-300.png",
+    "title": "Founder, CEO, CTO",
+    "oneLine": "End-to-end mobile app development, from UX to deployment.",
+    "dates": "Aug 2022 - present"
+  },
+  {
     "company": "Indeed",
     "image": "/assets/Indeed_Logo.png",
     "title": "Software Engineer",
+    "oneLine": "Backend recruiter APIs and database, built and supported",
     "dates": "Apr 2019 - Aug 2022"
   },
   {
     "company": "Snapchat",
     "image": "/assets/snap-ghost-yellow.png",
     "title": "Software Engineer",
-    "dates": "August 2017 - Apr 2019"
+    "oneLine": "Backend Android app and oncall support; fullstack React website",
+    "dates": "Aug 2017 - Apr 2019"
   },
   {
     "company": "Google",
     "image": "/assets/Google_G_Logo.svg",
     "title": "Software Engineer",
+    "oneLine": "Fullstack Flutter app for ads; backend image processing tool",
     "dates": "Sep 2016 - Aug 2017"
   },
   {
     "company": "MIT Lincoln Laboratory",
     "image": "/assets/LL_Logo.png",
-    "title": "Software Engineer",
+    "title": "Summer Intern",
+    "oneLine": "Backend infrastructure for military logistics",
     "dates": "June 2015 - Aug 2015"
   }
 ]
