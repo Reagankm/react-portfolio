@@ -16,7 +16,7 @@ type EmployerCardProps = PropsWithChildren<{
 const EmployerCard: React.FC<EmployerCardProps> = (props: EmployerCardProps) => {
 
     return (
-        <Card className='work-exp-panel ultra'>
+        <Card key={props.company} className='work-exp-panel ultra'>
             <SimpleRow className='name-and-dates'>
                 <SimpleCol>
                     <div className='exp-image'>

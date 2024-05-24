@@ -20,24 +20,24 @@ const ProjectDisplay: React.FC = () => {
     }
 
     return (
-      <div>
-        <Row key={proj.name} className='row-eq-height proj-row hide-on-sm'>
-          <SimpleCol className='lg-project'>
+      <div key={'projRow' + index}>
+        <Row key={proj.name + '_hideOnSmall'} className='row-eq-height proj-row hide-on-sm'>
+          <SimpleCol key={'firstProj'} className='lg-project'>
             <ProjectCard name={proj.name} technology={proj.technology} oneLine={proj.oneLiner} description={proj.description} company={proj.company} />
           </SimpleCol>
           {secondProj &&
-           <SimpleCol className='lg-project'>
+           <SimpleCol key={'secondProj'} className='lg-project'>
              <ProjectCard name={secondProj.name} technology={secondProj.technology} oneLine={secondProj.oneLiner} description={secondProj.description} company={secondProj.company} />
            </SimpleCol>
           }
         </Row>
-        <Row key={proj.name} className='row-eq-height proj-row hide-on-lg'>
+        <Row key={proj.name + '_hideOnLg'} className='row-eq-height proj-row hide-on-lg'>
           <SimpleCol className='sm-project'>
             <ProjectCard name={proj.name} technology={proj.technology} oneLine={proj.oneLiner} description={proj.description} company={proj.company} />
           </SimpleCol>
         </Row>
         {secondProj &&
-         <Row key={proj.name + '2'} className='row-eq-height proj-row hide-on-lg'>
+         <Row key={proj.name + '_hideOnLg2'} className='row-eq-height proj-row hide-on-lg'>
            <SimpleCol className='sm-project'>
              <ProjectCard name={secondProj.name} technology={secondProj.technology} oneLine={secondProj.oneLiner} description={secondProj.description} company={secondProj.company} />
          </SimpleCol>
@@ -50,10 +50,10 @@ const ProjectDisplay: React.FC = () => {
 
   return (
       <div className='experience-section'>
-          <Row className='heading ultra' id='projects'>
+          <Row key={'heading'} className='heading ultra' id='projects'>
               Selected Projects
           </Row>
-          <Row>
+          <Row key={'panelDisplay'}>
               <Card className='glass-panel ultra'>
                   {projectRows}
               </Card>

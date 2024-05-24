@@ -12,17 +12,17 @@ type JsonSkill = {
 const SkillDisplay: React.FC = () => {
     return (
         <div className='experience-section'>
-            <Row className='heading ultra' id='skills'>
+            <Row key={'heading'} className='heading ultra' id='skills'>
                 Skills
             </Row>
-            <Row>
+            <Row key={'skillSection'}>
                 <Card className='glass-panel ultra'>
                     <Row>
-                        {skillData.map((skillCategory: JsonSkill) => {
+                        {skillData.map((skillCategory: JsonSkill, index) => {
                             const heading: string = skillCategory.type;
                             const tech: string[] = skillCategory.values;
                             return (
-                                <Col xs={4}>
+                                <Col key={heading} xs={4}>
                                     <SkillCategory heading={heading}
                                                    technology={tech}/>
                                 </Col>
