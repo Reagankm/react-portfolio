@@ -1,11 +1,14 @@
 body {
   text-align: center;
   overflow: auto;
-  background: black url('./dinos-horiz-opt.jpg') fixed;
+  background: black url('./dinos-horiz-opt.jpg') fixed no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; /* Fill entire page */
+  margin: 0; /* Ensure there's no margin around the body */
+  padding: 0; /* Ensure there's no padding around the body */
+  height: 100%; /* Ensure the body takes up the full height of the viewport */
 }
 
 .page-wrapper {
