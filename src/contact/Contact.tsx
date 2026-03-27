@@ -20,8 +20,8 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className='button-row'>
-                    <a href='https://drive.google.com/file/d/1fiLAaHqjPCJ2ogG7qpc5ZWa4eq-_SRWE/view?usp=sharing'
-                       target='_blank'>
+                    <a href='/assets/Reagan%20Middlebrook%202026.pdf'
+                       target='_blank' rel='noreferrer'>
                         <button>
                             Resume
                             <br />
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                               </span>
                         </button>
                     </a>
-                    <a href='http://linkedin.com/in/reagankm' target='_blank'>
+                    <a href='http://linkedin.com/in/reagankm' target='_blank' rel='noreferrer'>
                         <button>
                             LinkedIn
                             <br />
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
                               </span>
                         </button>
                     </a>
-                    <a href='http://www.github.com/reagankm' target='_blank'>
+                    <a href='http://www.github.com/reagankm' target='_blank' rel='noreferrer'>
                         <button>
                             GitHub
                             <br />
@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
 
                 <div className='email'>
                     Email me at <a
-                    href='mailto:reagankm@gmail.com'>reagankm@gmail.com</a>
+                    href='mailto:reagan@middlebrook.dev'>reagan@middlebrook.dev</a>
                 </div>
 
             </div>

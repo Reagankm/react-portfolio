@@ -2,20 +2,26 @@
   {
     "type": "Active Tech Stack",
     "values": [
-      "React Native",
-      "Typescript",
-      "NoSQL",
-      "Google Cloud aka GCP: Firebase, Firestore, Storage, Functions, Logs Explorer"
+      "Python",
+      "PostgreSQL",
+      "SQL",
+      "Databricks",
+      "Apache Spark",
+      "Amazon Web Services aka AWS: SQS, S3"
     ]
   },
   {
     "type": "Prior Tech Stack",
     "values": [
+      "React Native",
+      "Typescript",
+      "NoSQL",
+      "Google Cloud aka GCP: Firebase, Firestore, Storage, Functions, Logs Explorer",
       "Java",
       "Spring Boot",
       "MongoDB",
       "Terraform",
-      "Amazon Web Services aka AWS: SNS, SQS, Lambda"
+      "AWS: Lambda"
     ]
   },
   {
@@ -25,9 +31,7 @@
       "Dart",
       "Flutter",
       "C++",
-      "SQL",
       "MySQL",
-      "Python",
       "C",
       "PHP",
       "Go"
