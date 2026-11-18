@@ -1,0 +1,386 @@
+/*
+ * Christmas Song-o-ganza site styles.
+ * Look and feel: the app's Rules screen (sunburst background, logo on a white
+ * backing, ColorCards with a thick border and offset shadow block, Lora italic
+ * subtitle). Document layout: the Cupbearer policy pages (centered bold title
+ * over the effective date, numbered clauses with a separate number column,
+ * underlined lead-in labels, scroll-to-top button).
+ */
+
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/Lora-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/fonts/Lora-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Colors from the app's utilities/constants.ts */
+:root {
+  color-scheme: light;
+
+  --dark-red: #c53747;
+  --mid-red: #b35a5e;
+  --light-red: #c88b88;
+  --dark-green: #487758;
+  --light-green: #a9bdbd;
+  --mid-green: #d6dcd8;
+
+  --text: #222;
+  --card-fill: rgba(255, 255, 255, .92);
+  --shadow-offset: 20px;
+  --border: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  font: 1.08rem/1.65 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem 0;
+}
+
+/*
+ * One sunburst stretched to fill the window, pinned in place while the page
+ * scrolls. A fixed layer instead of background-attachment: fixed, which iOS
+ * Safari ignores (it would stretch the image over the whole page height).
+ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--bg-image, url('assets/backgrounds/sunburst-red.svg'));
+  background-position: center;
+  background-size: var(--bg-size, cover);
+  background-repeat: var(--bg-repeat, no-repeat);
+}
+
+/* ---------- Background picker (only shown on localhost; see bg-picker.js) ---------- */
+
+body.has-bg-picker {
+  padding-top: 4.5rem;
+}
+
+.bg-picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem 1rem;
+  padding: .6rem 1rem;
+  background: rgba(255, 255, 255, .95);
+  border-bottom: 3px solid var(--dark-green);
+  font-size: .9rem;
+}
+
+.bg-picker label {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.bg-picker select,
+.bg-picker button {
+  font: inherit;
+  padding: .25rem .5rem;
+  border: 2px solid var(--dark-green);
+  background: #fff;
+  color: var(--text);
+}
+
+.bg-picker button[aria-pressed='true'] {
+  background: var(--dark-green);
+  color: #fff;
+}
+
+a {
+  color: var(--dark-red);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .15em;
+}
+
+a:hover {
+  color: var(--dark-green);
+}
+
+/* ---------- Masthead: logo on a semi-opaque backing, like the Rules tab ---------- */
+
+.masthead {
+  width: min(42rem, 100%);
+  background: rgba(255, 255, 255, .8);
+  padding: .9rem 1rem;
+  text-align: center;
+}
+
+.masthead img {
+  display: block;
+  width: min(60%, 280px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.tagline {
+  margin: .35rem 0 0;
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+/* ---------- ColorCard: thick border plus an offset shadow block ---------- */
+
+.card {
+  position: relative;
+  width: min(48rem, 100% - var(--shadow-offset));
+  margin: 2rem var(--shadow-offset) calc(2rem + var(--shadow-offset)) 0;
+  padding: 2rem 2.25rem;
+  background: var(--card-fill);
+  border: var(--border) solid var(--dark-green);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 calc(-1 * var(--border)) var(--dark-green);
+}
+
+.card--red {
+  border-color: var(--dark-red);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 calc(-1 * var(--border)) var(--dark-red);
+}
+
+/* ---------- Title block (Cupbearer's BoldAndPlainTwoLineHeading) ---------- */
+
+.doc-title {
+  margin: 0 0 1.75rem;
+  text-align: center;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  color: var(--dark-red);
+}
+
+.doc-title .effective {
+  display: block;
+  margin-top: .4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* ---------- The "short version" box: a small green ColorCard ---------- */
+
+.callout {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--mid-green);
+  border: 3px solid var(--dark-green);
+  box-shadow: 8px 8px 0 -3px var(--dark-green);
+}
+
+.callout strong:first-child {
+  color: var(--dark-green);
+}
+
+/* ---------- Numbered clauses (Cupbearer's BulletedParagraph) ---------- */
+
+.clause {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.clause-num {
+  flex: 0 0 3ch;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--dark-red);
+  text-align: right;
+}
+
+.clause-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.clause-body h2 {
+  margin: 0 0 .5rem;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--dark-green);
+}
+
+.clause-body > p:first-of-type {
+  margin-top: 0;
+}
+
+/* Lead-in labels like "Retention." are underlined, the way Cupbearer does it */
+.clause-body p > strong:first-child {
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .15em;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: .6rem;
+}
+
+li::before {
+  content: '\2022';
+  position: absolute;
+  left: .2rem;
+  top: -.15rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--dark-red);
+}
+
+/* ---------- Landing page link list ---------- */
+
+.link-list li {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.2rem;
+}
+
+.card h2.section-title {
+  margin: 2rem 0 .5rem;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--dark-green);
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  align-self: stretch;
+  margin: auto -1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, .8);
+  text-align: center;
+  font-size: .9rem;
+}
+
+.site-footer a:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.site-footer .copyright {
+  margin: .35rem 0 0;
+}
+
+/* ---------- Scroll to top (Cupbearer's react-scroll-to-top) ---------- */
+
+.to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--dark-red);
+  border: 3px solid var(--dark-red);
+  box-shadow: 6px 6px 0 -3px var(--dark-red);
+  font-size: 1.4rem;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.to-top:hover {
+  color: var(--dark-green);
+  border-color: var(--dark-green);
+  box-shadow: 6px 6px 0 -3px var(--dark-green);
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 600px) {
+  :root {
+    --shadow-offset: 10px;
+    --border: 4px;
+  }
+
+  body {
+    padding-top: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1.25rem 1rem;
+  }
+
+  .doc-title {
+    font-size: 1.4rem;
+  }
+
+  .clause {
+    gap: .6rem;
+  }
+
+  .clause-num {
+    flex-basis: 2.5ch;
+    font-size: 1.05rem;
+  }
+
+  .clause-body h2 {
+    font-size: 1.05rem;
+  }
+
+  .to-top {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
